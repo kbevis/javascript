@@ -8,15 +8,15 @@ function setup() {
   
   var x = random(width);
   var y = random(height);
-  var w;
+  var w = random(15, width/2);
 
-  checkerboard(x, y, 100);
+  checkerboard(x, y, w);
   
   function checkerboard(x, y, w) {
     
     var color1 = (0); // black
     var color2 = (255); // white
-    var size = w/10;
+    var size = w/8;
     translate(x, y);
   
     for (var i = 0; i < 8; i++) { // row counter, width
